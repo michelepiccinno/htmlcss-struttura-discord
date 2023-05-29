@@ -13,7 +13,7 @@ header{
     display: flex;    
     justify-content: center;
     margin: auto;
-    padding: 20px 0;
+    padding: 20px 40px;
     font-size: 24px;
 }
 
@@ -41,12 +41,12 @@ header{
     text-align: right;
 }
 
-.section_1{
+.section_header{
     background-color: rgb(0, 0, 160);
     padding: 40px 40px;
 }
 
-.header_sect_container{
+.section_header .header_sect_container{
     max-width: 900px;
     height: 400px;
     background-color: rgb(247, 97, 227);
@@ -64,21 +64,21 @@ header{
     margin: auto;
 }
 
-.minibox{
+.main_sect_container .box .minibox{
     height: 400px;
 }
 
-.minibox.pink{ 
+.main_sect_container .box .minibox.pink{ 
     background-color: rgb(255, 169, 229);
     flex-grow: 3;
 }
 
-.minibox.blue{ 
+.main_sect_container .box .minibox.blue{ 
     background-color:  rgb(8, 111, 170); 
     flex-grow: 4;
 }   
 
-.bckgr_grey{
+main > .bckgr_grey{
     background-color: rgb(211, 211, 211);
 }
 
@@ -97,34 +97,39 @@ header{
     background-color: green;
 }
 
-.bckgr_black{
-    background-color: rgb(44, 44, 44);
-}
-
-.minibox_footer{
+.foot_sect_container .box .minibox_footer{
     min-width: 80px;
     height: 500px;
     border: 1px dashed white;
 }
 
-.foot_grow{
-    flex-grow: 1;
+.foot_sect_container .box .foot_grow{
+    flex-grow: 4;
     background-color: rgb(184, 87, 103);
 }
 
-.hr_grey{
+footer > .hr_grey{
     color: grey;
 }
 
 .aqua{
     background-color: aqua;
+    flex-grow: 1;
 }
 
-.foot_sect_container{
-    padding: 40px 40px;
+footer > .foot_sect_container{
+    background-color: rgb(44, 44, 44);
 }
 
-.footblock{
+.foot_sect_container.first{
+    padding: 10px 40px 30px;
+}
+
+.foot_sect_container.second{
+    padding: 20px 40px 0;    
+}
+
+.foot_sect_container .footblock{
     display: flex;
     justify-content: space-between;
     max-width: 1160px;
@@ -135,7 +140,7 @@ header{
     padding: 20px 0 20px;
 }
 
-.logo_footer, .button{
+.foot_sect_container .logo_footer, .foot_sect_container .button{
     background-color: grey;
     border: 1px dashed white;
     padding: 5px
