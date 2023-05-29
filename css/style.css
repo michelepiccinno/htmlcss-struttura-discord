@@ -78,7 +78,7 @@ header{
     flex-grow: 4;
 }   
 
-main > .bckgr_grey{
+main .main_sect_container:nth-child(2n+0){
     background-color: rgb(211, 211, 211);
 }
 
