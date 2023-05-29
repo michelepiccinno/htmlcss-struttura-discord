@@ -1,7 +1,7 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 
@@ -13,7 +13,6 @@ header{
 .header_nav_container{ 
     display: flex;    
     justify-content: center;
-    width: 100%;
     margin: auto;
     padding: 20px 0;
     font-size: 24px;
@@ -21,8 +20,8 @@ header{
 
 .logo, .header_nav, .login{
     background-color: rgb(255, 174, 0);
-    border: 1px dashed black;   
-    padding: 8px
+    padding: 8px;
+    border: 1px dashed black;
 }
 
 .logo, .login{
@@ -30,7 +29,8 @@ header{
 }
 
 .header_nav{
-    width: 760px;
+    width: 100%;
+    max-width: 760px;
     text-align: center;
 }   
 
@@ -50,10 +50,97 @@ header{
 
 .header_sect_container{
     width: 900px;
-    min-height: 40px;
+    height: 400px;
     background-color: rgb(247, 97, 227);
     margin: auto;
 }
 
-/*MAIN PROPERTY*/
+/*SECTIONS PROPERTY*/
+.main_sect_container{
+    width: 100%;
+    padding: 40px 0;
+}
 
+.main_sect_container .box{
+    display: flex;
+    width: 1160px;
+    margin: auto;
+}
+
+.minibox{
+    height: 400px;
+}
+
+.minibox.pink{ 
+    background-color: rgb(255, 169, 229);
+    flex-grow: 3;
+}
+
+.minibox.blue{ 
+    background-color:  rgb(8, 111, 170); 
+    flex-grow: 4;
+}   
+
+.bckgr_grey{
+    background-color: rgb(211, 211, 211);
+}
+
+.order1{
+    order: 1;
+}
+
+.order2{
+    order: 2;
+}
+
+.main_sect_container .box .green_box{
+    width: 1160px;
+    height: 900px;
+    margin: auto;
+    background-color: green;
+}
+
+.bckgr_black{
+    background-color: rgb(44, 44, 44);
+}
+
+.minibox_footer{
+    min-width: 180px;
+    height: 500px;
+    border: 1px dashed white;
+}
+
+.foot_grow{
+    flex-grow: 1;
+    background-color: rgb(184, 87, 103);
+}
+
+.hr_grey{
+    color: grey;
+}
+
+.aqua{
+    background-color: aqua;
+}
+
+.foot_sect_container{
+    width: 100%;
+    padding: 40px 0;
+}
+
+.footblock{
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    line-height: 30px;
+    margin: auto;
+    background-color: aquamarine;
+    font-size: 30px;
+    padding: 20px 0 20px;
+}
+
+.logo_footer, .button{
+    background-color: grey;
+    border: 1px dashed white;
+    padding: 5px
+}
