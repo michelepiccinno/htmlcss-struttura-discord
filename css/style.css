@@ -108,7 +108,7 @@ main .main_sect_container:nth-child(2n+0){
     background-color: rgb(184, 87, 103);
 }
 
-footer > .hr_grey{
+footer .hr_grey{
     color: grey;
 }
 
